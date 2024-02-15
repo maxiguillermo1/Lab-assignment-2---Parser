@@ -11,7 +11,7 @@ int charClass;
 //  if given this:  (sum + 47) / total
 char lexeme[100]; // <-- [(,s,u,m,+,4,7,),/,t,o,t,a,l] This array is actually a whole string. According to c/c++ this will be treated as both a whole null-terminated string and a list of characters
 char nextChar;
-int lexLen; //<- initialize lexlen to keep treak of the length of the whole input from txt
+int lexLen; //<- initialize lexlen to keep trak of the length of the whole input from txt
 int token;
 int nextToken;
 FILE *in_fp, *fopen();
