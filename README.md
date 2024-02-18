@@ -23,3 +23,25 @@ Example Grammar for Arithmetic Expressions:
 <term> -> <factor> {(* | /) <factor>}
 <factor> -> id | int constant | ( <expr> )
 ```
+
+# Diagram for a top-down approach to the Parsing logic, by starting in <expr>:
+
+
+```bash
+<expr>
+ |        \
+<term>     +
+ |          \
+"3"         <term>
+              |
+             <factor>
+              |     \
+             "5"     *
+                      |
+                    <term>
+                    /  |   \
+                 <factor>  /   <factor>
+                    |         |         |
+                   "2"       "1"
+
+```
